@@ -7,10 +7,13 @@
       children:
       - !type:NestedSelector
         tableId: SalvageScrapLowValue
-        weight: 65
+        weight: 50
       - !type:NestedSelector
         tableId: SalvageScrapHighValue
-        weight: 35
+        weight: 30
+      - !type:NestedSelector
+        tableId: SalvageTreasureCommon
+        weight: 20
     - !type:NestedSelector
       tableId: GenericTrashItems
       weight: 15
@@ -18,9 +21,9 @@
       weight: 10
       children:
       - !type:NestedSelector
-        tableId: SalvageTreasureCommon
-      - !type:NestedSelector
         tableId: MaintToolsTable
+      - !type:NestedSelector
+        tableId: ContrabandFishTable
 
 - type: entityTable
   id: RareFishTable
@@ -79,3 +82,34 @@
     children:
       - !type:NestedSelector
         tableId: BasicFishingLootTable
+
+
+#SD START
+- type: entityTable
+  id: ContrabandFishTable
+  table: !type:GroupSelector
+    children:
+    - id: ClothingShoesChameleonNoSlips
+    - id: ClothingOuterVestWeb
+    - id: SoapSyndie
+    - id: ToolboxSyndicateFilled
+    - id: ClothingNeckScarfStripedSyndieGreen
+    - id: ClothingHeadHatCatEars
+    - id: ClothingNeckScarfStripedSyndieRed
+    - id: ClothingUniformJumpsuitOperative
+    - id: WeaponSniperMosin
+    - id: ADTAttachmentSuppressor
+    - id: CigPackSyndicate
+    - id: MuteToxinChemistryBottle
+    - id: ADTClothingBackpackDuffelSyndicateFilledMaid
+    - id: ADTClothingNeckCloakNukeOps
+    - id: GrenadeFlashBang
+    - id: ClothingEyesGlassesOutlawGlasses
+    - id: ClothingHeadHatOutlawHat
+    - id: ClothingBeltMilitaryWebbing
+    - id: ClothingBackpackDuffelSyndicateEVABundle
+    - id: JetpackBlackFilled
+    - id: NukeDiskFake
+    - id: CyberPen
+    - id: LanternFlash
+    - id: ClothingOuterHardsuitCarp
