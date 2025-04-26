@@ -76,8 +76,6 @@
                 - !type:ComboAudioEffect
                   sound:
                     collection: GenericHit
-                - !type:ComboStunEffect
-                  stunTime: 0.5 # SD-Tweak
                 - !type:ComboTrowTargetEffect
             - actionsNeeds:
                 - Disarm
