@@ -7,3 +7,8 @@
     Telecrystal: 25
   categories:
     - UplinkDisruption
+   conditions:
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
